@@ -1,3 +1,4 @@
+import '@mdi/font/scss/materialdesignicons.scss'
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
 
