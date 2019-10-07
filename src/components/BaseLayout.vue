@@ -1,13 +1,22 @@
 <template lang="pug">
-  Header
+  .baselayout
+    HeaderBar.header.mb-5
+    slot
+  
 </template>
 
+<style lang="stylus" scoped>
+  .header
+    position sticky
+    top 0
+</style>
+
 <script>
-import Header from './Header';
+import HeaderBar from './HeaderBar';
 
 export default {
   components: {
-    Header,
+    HeaderBar,
   },
 };
 </script>
