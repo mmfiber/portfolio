@@ -1,13 +1,19 @@
-<template>
-  <HelloWorld />
+<template lang="pug">
+  v-container
+    v-row.justify-center.align-center.fill-height
+      .wrapper
+        v-row.justify-center.link-wrapper
+          router-link(to="/a.justify-centerbout").display-3.mb-6 Welcome to Masahiro Mikami's Portfolio Site
+        v-row.justify-center.link-wrapper
+          router-link(to="/about").display-1 Click to start
 </template>
 
-<script>
-import HelloWorld from '../components/HelloWorld';
+<style lang="stylus" scoped>
+  .container
+    height 100%
 
-export default {
-  components: {
-    HelloWorld,
-  },
-};
-</script>
+  .link-wrapper>a
+    text-decoration none
+    color rgba(0,0,0,.87)
+</style>
+

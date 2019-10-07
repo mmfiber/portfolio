@@ -1,3 +1,12 @@
 {
-  "message": "hello i18n !!"
+  "Career":{
+    "Name": {
+      "title": "Name:　",
+      "content": "Masahiro Mikami"
+    },
+    "Occupation": {
+      "title": "Occupation:　",
+      "content": "Student"
+    }
+  }
 }
