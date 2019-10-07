@@ -1,3 +1,12 @@
 {
-  "message": "こんにちは"
+  "Career":{
+    "Name": {
+      "title": "名前：　",
+      "content": "三上勝広"
+    },
+    "Occupation": {
+      "title": "職業：　",
+      "content": "学生"
+    }
+  }
 }
