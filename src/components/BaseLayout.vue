@@ -1,13 +1,13 @@
 <template lang="pug">
-  BaseLayout
+  Header
 </template>
 
 <script>
-import BaseLayout from '../components/BaseLayout';
+import Header from './Header';
 
 export default {
   components: {
-    BaseLayout,
+    Header,
   },
 };
 </script>
