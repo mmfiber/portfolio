@@ -8,5 +8,90 @@
       "title": "職業：　",
       "content": "学生"
     }
-  }
+  },
+  "langs":{
+    "Python":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2018/4/1",
+        "end": ""
+      }
+    },
+    "HTML":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2018/12/1",
+        "end": ""
+      }
+    },
+    "CSS & SCSS & Stylus":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2018/12/1",
+        "end": ""
+      }
+    },
+    "JavaScript(ES6)":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2018/12/1",
+        "end": ""
+      }
+    },
+    "php":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2019/8/20",
+        "end": ""
+      }
+    },
+    "WordPress":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2019/8/20",
+        "end": ""
+      }
+    },
+    "C":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2014/4/1",
+        "end": "2015/1/1"
+      }
+    },
+    "Java":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2015/4/1",
+        "end": "2015/9/1"
+      }
+    },
+    "Japanese":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "1996/3/19",
+        "end": ""
+      }
+    },
+    "English":{
+      "exp": "データ解析",
+      "level": "2",
+      "duration": {
+        "start": "2002/3/19",
+        "end": ""
+      }
+    }
+  },
+  "Coding experience": "使用歴：",
+  "year": "年",
+  "month": "ヶ月"
 }
