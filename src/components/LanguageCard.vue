@@ -1,14 +1,14 @@
 <template lang="pug">
-  v-card.mb-10
+  v-card(elevation=8).mb-10
     v-card-title.display-1.justify-center {{lang}}
     v-card-text
-      v-container(fluid).text {{exp}}
+      v-container(fluid).text {{$t(`langs.${lang}.exp`)}}
       v-container(fluid).level.align-stretch
         v-row.justify-center.align-center.body-1
           span.mr-1 {{$t("Coding experience")}}
           span.mr-1(v-if="duration.years") {{duration.years.toString()+" "+this.$tc("year", duration.years)}}
           span.mr-5(v-if="duration.months") {{duration.months.toString()+" "+this.$tc("month", duration.months)}}
-          v-icon(v-for="l in level" :style="l.styles") {{l.icon}}
+          v-icon(v-for="(l, id) in level" :key="id" :style="l.styles") {{l.icon}}
 </template>
 
 <style lang="stylus" scoped>
@@ -39,8 +39,6 @@ export default {
   },
   data(){
     return {
-      icon: this.$t(`langs.${this.lang}.icon`),
-      exp: this.$t(`langs.${this.lang}.exp`),
       level: this.stars(this.$t(`langs.${this.lang}.level`)),
       duration: this.stydyDuration(this.$t(`langs.${this.lang}.duration`)),
     }
@@ -73,7 +71,6 @@ export default {
       let days = Math.floor(ms / (60*60*24*1000))
       let months = Math.floor(days / 30)
       let years = Math.floor(months / 12)
-
       const duration = {
         "years": years,
         "months": months - years*12,

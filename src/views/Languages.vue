@@ -2,10 +2,10 @@
   BaseLayout
     v-container
       v-row.justify-center
-        v-col.col-12.col-xs-12.col-sm-6.col-md-4.px-10(v-for="lang in langs")
-          LanguageCard(:lang="lang")
+        v-col.col-12.col-xs-12.col-sm-6.col-md-4.pa-10(v-for="(lang, id) in langs" :key="id")
+          LanguageCard.fill-height(:lang="lang")
       v-row.justify-center.mt-10
-        v-icon(v-for="i in langIcons" size="80") {{i}}
+        v-icon(v-for="(i, id) in langIcons" :key="id" size="80") {{i}}
 </template>
 
 <style lang="stylus" scoped>
