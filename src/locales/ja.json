@@ -1,12 +1,27 @@
 {
   "Career":{
     "Name": {
-      "title": "名前：　",
+      "title": "名前：",
       "content": "三上勝広"
     },
     "Occupation": {
-      "title": "職業：　",
+      "title": "職業：",
       "content": "学生"
     }
-  }
+  },
+  "langs":{
+    "Python": "aaaa",
+    "HTML": "データ解析",
+    "CSS & SCSS & Stylus": "データ解析",
+    "JavaScript(ES6)": "データ解析",
+    "php": "データ解析",
+    "WordPress": "データ解析",
+    "C": "データ解析",
+    "Java": "データ解析",
+    "Japanese": "データ解析",
+    "English": "データ解析"
+  },
+  "Coding experience": "使用歴：",
+  "year": "年",
+  "month": "ヶ月"
 }
