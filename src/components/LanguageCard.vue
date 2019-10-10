@@ -28,8 +28,6 @@
 </style>
 
 <script>
-import BaseLayout from '../components/BaseLayout';
-
 export default {
   components: {
     BaseLayout,
