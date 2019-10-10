@@ -1,8 +1,8 @@
 <template lang="pug">
   v-card(elevation=8).mb-10
-    v-card-title.display-1.justify-center {{lang}}
+    v-card-title.display-1.justify-center {{name}}
     v-card-text
-      v-container(fluid).text {{$t(`langs.${lang}.exp`)}}
+      v-container(fluid).text {{$t(`langs.${name}`)}}
       v-container(fluid).level.align-stretch
         v-row.justify-center.align-center.body-1
           span.mr-1 {{$t("Coding experience")}}
@@ -39,8 +39,9 @@ export default {
   },
   data(){
     return {
-      level: this.stars(this.$t(`langs.${this.lang}.level`)),
-      duration: this.stydyDuration(this.$t(`langs.${this.lang}.duration`)),
+      name: this.lang.name,
+      level: this.stars(this.lang.level),
+      duration: this.stydyDuration(this.lang.duration),
     }
   },
   methods:{

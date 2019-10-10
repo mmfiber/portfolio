@@ -15,7 +15,7 @@
 <script>
 import BaseLayout from '../components/BaseLayout'
 import LanguageCard from '../components/LanguageCard'
-
+import langInfo from '../resource/lang.json'
 export default {
   components: {
     BaseLayout,
@@ -23,31 +23,8 @@ export default {
   },
   data(){
     return {
-      langs:[
-        "Python",
-        "HTML",
-        "CSS & SCSS & Stylus",
-        "JavaScript(ES6)",
-        "php",
-        "C",
-        "Java",
-        "Japanese",
-        "English"
-      ],
-      langIcons:[
-        "mdi-language-python",
-        "mdi-language-html5",
-        "mdi-language-css3",
-        "mdi-sass",
-        "mdi-language-javascript",
-        "mdi-vuejs",
-        "mdi-vuetify",
-        "mdi-language-php",
-        "mdi-wordpress",
-        "mdi-language-c",
-        "mdi-language-java",
-        "mdi-github-circle",
-      ]
+      langs: langInfo["langs"],
+      langIcons:langInfo["lang-icons"]
     }
   }
 };
