@@ -29,11 +29,8 @@
 
 <script>
 export default {
-  components: {
-    BaseLayout,
-  },
   props:{
-    lang: String,
+    lang: Object,
   },
   data(){
     return {
