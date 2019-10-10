@@ -21,6 +21,16 @@
     "Japanese": "データ解析",
     "English": "データ解析"
   },
+  "works":{
+    "SSA": {
+      "title": "学内向け留学情報サイト",
+      "content": "学内向けの留学情報サイト"
+    },
+    "Portfolio": {
+      "title": "ポートフォリオ",
+      "content": "vue"
+    }
+  },
   "Coding experience": "使用歴：",
   "year": "年",
   "month": "ヶ月"

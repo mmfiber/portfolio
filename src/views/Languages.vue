@@ -16,6 +16,7 @@
 import BaseLayout from '../components/BaseLayout'
 import LanguageCard from '../components/LanguageCard'
 import langInfo from '../resource/lang.json'
+
 export default {
   components: {
     BaseLayout,

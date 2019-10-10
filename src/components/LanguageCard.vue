@@ -28,14 +28,9 @@
 </style>
 
 <script>
-import BaseLayout from '../components/BaseLayout';
-
 export default {
-  components: {
-    BaseLayout,
-  },
   props:{
-    lang: String,
+    lang: Object,
   },
   data(){
     return {

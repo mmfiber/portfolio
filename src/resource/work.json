@@ -1,0 +1,22 @@
+{
+  "works":[
+    {
+      "name": "SSA",
+      "eyecatch":"SSA.png",
+      "create-date": "2019/9",
+      "to": "https://worldclub-soka.com"
+    },
+    {
+      "name": "Portfolio",
+      "eyecatch":"logo.png",
+      "create-date": "2019/9",
+      "to": "/"
+    },
+    {
+      "name": "Portfolio",
+      "eyecatch":"logo.png",
+      "create-date": "2019/9",
+      "to": "/"
+    }
+  ]
+}
