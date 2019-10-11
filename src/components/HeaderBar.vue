@@ -1,31 +1,48 @@
 <template lang="pug">
   .header
     v-toolbar(height="100%")
-      v-toolbar-items
-        v-app-bar-nav-icon(v-if="mobile" @click.stop="drawer = !drawer")
-        v-row(v-else).align-center.titles
+      v-toolbar-items.hidden-lg-and-up
+       v-btn(@click.stop="drawer = !drawer" text)
+        v-icon mdi-menu
+      v-toolbar-items.hidden-md-and-down
+        v-row.align-center
           template(v-for="ctn in contents")
             router-link.fill-height(:to="getLink(ctn)")
               v-btn.px-10.display-1.capitalize(text
                 :style="{color: selectedCtn==ctn ? selectedColor : ''}") {{ctn}}
-        LanguageBtn.justify-end.lang(:selectedColor="selectedColor")
+      v-spacer
+      v-toolbar-items
+        LanguageBtn(:selectedColor="selectedColor")
+        
+    .wrapper
+      v-navigation-drawer(v-model="drawer" stateless).hidden-lg-and-up
+        v-list-item-group(v-model="selectedCtnId" color="teal")
+          template(v-for="ctn in contents")
+            v-list-item
+              router-link.capitalize(:to="getLink(ctn)"
+                :style="{color: selectedCtn==ctn ? selectedColor : 'rgba(0, 0, 0, .87)'}")
+                v-container.fill-height.headline(fluid) {{ctn}}
+            
 </template>
 
 <style lang="stylus" scoped>
-  .v-toolbar__items
-    width 100%
+  .v-toolbar
+    position relative
+  
+  .wrapper
+    position absolute
 
-    a
-      text-decoration none
+    .v-list-item
+      padding 0
 
-    .titles
-      float left
+      a
+        width 100%
 
-    .lang
-      float right
-    
-    .v-btn
-      height 100% !important
+  a
+    text-decoration none
+
+  .v-btn
+    height 100% !important
   
   .capitalize
       text-transform capitalize
@@ -54,9 +71,9 @@ export default {
     selectedCtn(){
       return this.$route.name
     },
-    mobile(){
-      return parseInt(window.innerWidth) < 960
-    },
+    selectedCtnId(){
+      return this.contents.indexOf(this.selectedCtn)
+    }
   },
   methods:{
     getLink(ctn){

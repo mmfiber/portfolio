@@ -7,8 +7,8 @@
 </template>
 
 <style lang="stylus" scoped>  
-
-
+  .capitalize
+    text-transform capitalize
 </style>
 
 <script>
