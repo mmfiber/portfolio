@@ -48,7 +48,6 @@ export default {
         "about",
         "languages",
         "works",
-        "contact"
       ],
       langs: this.$i18n.availableLocales,
       selectedColor: '#26A69A'
