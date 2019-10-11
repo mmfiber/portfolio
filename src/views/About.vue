@@ -10,6 +10,10 @@
             v-row
               span.headline {{$t(`Career.${ck}.title`)}}
               span.headline {{$t(`Career.${ck}.content`)}}
+          template(v-for="ctn in contacts")
+            v-row
+              span {{contact[ctn]}}
+          
 </template>
 
 <style lang="stylus" scoped>
@@ -22,6 +26,7 @@
 
 <script>
 import BaseLayout from '../components/BaseLayout';
+import contact from '../resource/contact.json'
 
 export default {
   components: {
@@ -32,7 +37,13 @@ export default {
       careerKey:[
         "Name",
         "Occupation"
-      ]
+      ],
+      contacts:[
+        "twitter",
+        "facebook",
+        "e-mail"
+      ],
+      contact: contact
     }
   }
 };

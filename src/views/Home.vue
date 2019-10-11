@@ -1,6 +1,6 @@
 <template lang="pug">
-  v-container
-    v-row.justify-center.align-center.fill-height
+  v-container.fill-height
+    v-row.justify-center.align-center
       .wrapper
         v-row.justify-center.link-wrapper
           router-link(to="/about").display-3.mb-6 Welcome to Masahiro Mikami's Portfolio Site
@@ -9,10 +9,8 @@
 </template>
 
 <style lang="stylus" scoped>
-  .container
-    height 100%
-
   .link-wrapper>a
+    text-align center
     text-decoration none
     color rgba(0,0,0,.87)
 </style>
