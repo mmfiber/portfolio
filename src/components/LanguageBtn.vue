@@ -2,7 +2,7 @@
   v-row.align-center
     template(v-for="(lang, index) in langs")
       span(v-if="index!=0").mx-2.display-1 /
-      v-btn.display-1.capitalize(@click="changeLang(lang)" text
+      v-btn.headline.capitalize(@click="changeLang(lang)" text
         :style="{color: selectedLang==lang ? selectedColor : ''}") {{lang}}
 </template>
 
