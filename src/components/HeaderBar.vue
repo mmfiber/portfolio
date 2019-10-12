@@ -1,6 +1,6 @@
 <template lang="pug">
   .header
-    v-toolbar
+    v-toolbar(height="100px")
       v-toolbar-items.hidden-lg-and-up
        v-btn(@click.stop="drawer = !drawer" text)
         v-icon mdi-menu
@@ -8,7 +8,7 @@
         v-row.align-center
           template(v-for="ctn in contents")
             router-link.fill-height(:to="getLink(ctn)")
-              v-btn.px-10.display-1.capitalize(text
+              v-btn.px-10.headline.capitalize(text
                 :style="{color: selectedCtn==ctn ? selectedColor : ''}") {{ctn}}
       v-spacer
       v-toolbar-items

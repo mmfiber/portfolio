@@ -1,30 +1,18 @@
 <template lang="pug">
   v-card(elevation=8).mb-10
-    v-card-title.display-1.justify-center {{name}}
+    v-card-title.headline.justify-center {{name}}
     v-card-text
       v-container(fluid).text {{$t(`langs.${name}`)}}
       v-container(fluid).level.align-stretch
-        v-row.justify-center.align-center.body-1
+        v-row
           span.mr-1 {{$t("Coding experience")}}
-          span.mr-1(v-if="duration.years") {{duration.years.toString()+" "+this.$tc("year", duration.years)}}
-          span.mr-5(v-if="duration.months") {{duration.months.toString()+" "+this.$tc("month", duration.months)}}
+          span {{codingExp}}
+        v-row
+          span.mr-1 {{$t("level")}}
           v-icon(v-for="(l, id) in level" :key="id" :style="l.styles") {{l.icon}}
 </template>
 
 <style lang="stylus" scoped>
-  .v-card
-    position relative
-
-    .text
-      font-size 20px
-      margin-bottom 50px
-        
-    .level 
-      position absolute
-      left 0
-      bottom 0
-      border-top 1px solid #cccccc
-
 </style>
 
 <script>
@@ -36,8 +24,18 @@ export default {
     return {
       name: this.lang.name,
       level: this.stars(this.lang.level),
-      duration: this.stydyDuration(this.lang.duration),
     }
+  },
+  computed:{
+    codingExp(){
+      const exp = []
+      const duration = this.calcDuration(this.lang.duration)
+      for(let k in duration){
+        const val = duration[k]
+        if(val) exp.push(val.toString()+" "+this.$tc(k, val))
+      }
+      return exp.join(" ")
+    },
   },
   methods:{
     stars(n){
@@ -57,7 +55,7 @@ export default {
       }
       return stars
     },
-    stydyDuration(d){
+    calcDuration(d){
       const start = new Date(d.start)
       const end = d.end ? new Date(d.end) : new Date()
       const duration = end.getTime() - start.getTime()
@@ -68,10 +66,9 @@ export default {
       let months = Math.floor(days / 30)
       let years = Math.floor(months / 12)
       const duration = {
-        "years": years,
-        "months": months - years*12,
+        "year": years,
+        "month": months - years*12,
       }
-
       return duration
     }
   }
