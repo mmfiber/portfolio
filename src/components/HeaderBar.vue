@@ -1,6 +1,6 @@
 <template lang="pug">
   .header
-    v-toolbar(height="100%")
+    v-toolbar
       v-toolbar-items.hidden-lg-and-up
        v-btn(@click.stop="drawer = !drawer" text)
         v-icon mdi-menu
