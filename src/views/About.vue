@@ -9,7 +9,7 @@
           tbody
             template(v-for="(info, index) in myInfo")
               tr.title
-                th {{info.title}}
+                th.pr-1 {{info.title}}
                 td(v-if="info.link")
                   a(:href="info.link") {{info.content}}
                 td(v-else) {{info.content}}
