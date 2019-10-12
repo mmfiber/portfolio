@@ -1,12 +1,61 @@
 {
-  "Career":{
+  "myinfo":{
     "Name": {
-      "title": "Name:　",
-      "content": "Masahiro Mikami"
+      "title": "Name:",
+      "content": "Masahiro Mikami",
+      "link": ""
     },
     "Occupation": {
-      "title": "Occupation:　",
-      "content": "Student"
+      "title": "University:",
+      "content": "Faculty of Engineering, Soka University",
+      "link": ""
+    },
+    "Birthday": {
+      "title": "Birthday:",
+      "content": "1996/03/19",
+      "link": ""
+    },
+    "Gthub": {
+      "title": "Gthub:",
+      "content": "mmfiber",
+      "link": "https://github.com/mmfiber"
+    },
+    "Twitter": {
+      "title": "twitter:",
+      "content": "@mikamincho0319",
+      "link": "https://twitter.com/mikamincho0319"
+    },
+    "Facebook": {
+      "title": "facebook:",
+      "content": "Masahiro Mikami",
+      "link": "https://www.facebook.com/chocomasa"
+    },
+    "E-mail": {
+      "title": "e-mail:",
+      "content": "mmikami.soka@gmail.com",
+      "link": ""
+    }
+  },
+  "langs":{
+    "Python": "初めて本格的に学習に取り組んだ言語であり、プログラム言語の中では最も使用歴が長い。主にデータ解析をするために使用しており、numpy, pandas, matplotlib といったライブラリを用いてデータの可視化を得意としている。",
+    "HTML & Pug": "Hylableでのインターンシップにて、音声分析データをレポート化するために学習開始。基本的な構文やタグの使い方を習得しており、Pugを使った動的なHTMLの作成が可能。このポートフォリオサイトもPugで記述。",
+    "CSS & SCSS & Stylus": "HTMLと同様にインターンシップにて、音声分析データをレポート化するために学習開始。基本的な使い方は習得しており、大学向けの留学情報サイトのスタイルの調整などで経験を積んでいる。このポートフォリオサイトはStylusで記述。",
+    "JavaScript(ES6)": "HTMLと同様にインターンシップにて、音声分析データをレポート化するために学習開始。jQueryなどを使った簡単なDOM操作やHighchartsを使った図の描画などを経験。",
+    "php": "後輩の留学支援のための大学向け留学情報サイトを作成するために学習を開始する。ドットインストールでのチュートリアルを終わらせ、現在はウェブサイトの作成を通して学習を進めている。",
+    "WordPress": "こちらも後輩の留学支援のための大学向け留学情報サイトを作成するために学習を開始する。公式ドキュメントやYoutubeなど様々な媒体から情報収集しつつ、ウェブサイトの作成を通して学習に取り組む。",
+    "C": "データ解析",
+    "Java": "データ解析",
+    "Japanese": "生まれた時から学習を開始し、最も慣れ親しんだ言語。奥が深すぎて生涯をかけてもマスターが難しいが、日々、休むことなくアウトプットを繰り返し、あきらめずに学習中。",
+    "English": "こちらの言語も小学一年生から学習しているのになかなか身につかない。非常に不思議である。毎日アウトプットしようと思うのにできない。不思議である。"
+  },
+  "works":{
+    "SSA": {
+      "title": "Soka Study Abroad",
+      "content": "学内向けの留学情報サイト。自身の留学経験において「情報不足」により留学という環境を最大限に活用することができなかったとを後悔。後輩には同じ失敗を繰り返してほしくないとの思いから、自らプロジェクトを立ち上げ運営中。"
+    },
+    "Portfolio": {
+      "title": "ポートフォリオ",
+      "content": "Vue.jsを使ったポートフォリオ。SPAで、日本語を母国語としない方にも自分のことを知ってもらうために、英語にも対応している。"
     }
   },
   "Coding experience": "Coding experience:",

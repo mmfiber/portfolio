@@ -10,7 +10,7 @@
 
 <style lang="stylus" scoped>
   .v-image
-    height 300px
+    height 200px
 
   .v-card
     position relative
