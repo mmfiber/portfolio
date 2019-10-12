@@ -8,13 +8,7 @@
     },
     {
       "name": "Portfolio",
-      "eyecatch":"logo.png",
-      "create-date": "2019/9",
-      "to": "/"
-    },
-    {
-      "name": "Portfolio",
-      "eyecatch":"logo.png",
+      "eyecatch":"portfolio.png",
       "create-date": "2019/9",
       "to": "/"
     }

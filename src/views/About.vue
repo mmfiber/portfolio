@@ -5,15 +5,14 @@
         v-flex.xs8.sm3
           img.icon(src="../assets/icon.svg")
       v-row.justify-center
-        v-flex.xs8.sm6
-          template(v-for="ck in careerKey")
-            v-row
-              span.headline {{$t(`Career.${ck}.title`)}}
-              span.headline {{$t(`Career.${ck}.content`)}}
-          template(v-for="ctn in contacts")
-            v-row
-              span {{contact[ctn]}}
-          
+        table
+          tbody
+            template(v-for="(info, index) in myInfo")
+              tr.title
+                th {{info.title}}
+                td(v-if="info.link")
+                  a(:href="info.link") {{info.content}}
+                td(v-else) {{info.content}}
 </template>
 
 <style lang="stylus" scoped>
@@ -22,11 +21,16 @@
 
   .icon
     width 100%
+
+  a
+    text-decoration none
+
+  th
+    text-align right
 </style>
 
 <script>
-import BaseLayout from '../components/BaseLayout';
-import contact from '../resource/contact.json'
+import BaseLayout from '../components/BaseLayout'
 
 export default {
   components: {
@@ -34,16 +38,18 @@ export default {
   },
   data(){
     return {
-      careerKey:[
-        "Name",
-        "Occupation"
-      ],
-      contacts:[
-        "twitter",
-        "facebook",
-        "e-mail"
-      ],
-      contact: contact
+      myInfoKeys: Object.keys(this.$i18n.messages.ja.myinfo)
+    }
+  },
+  computed:{
+    myInfo(){
+      return this.myInfoKeys.map((k) => {
+        return{
+          "title": this.$t(`myinfo.${k}.title`),
+          "content": this.$t(`myinfo.${k}.content`),
+          "link": this.$t(`myinfo.${k}.link`),
+        }
+      })
     }
   }
 };

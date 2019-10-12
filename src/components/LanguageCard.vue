@@ -1,18 +1,22 @@
 <template lang="pug">
-  v-card(elevation=8).mb-10
+  v-card(elevation=8)
     v-card-title.headline.justify-center {{name}}
     v-card-text
-      v-container(fluid).text {{$t(`langs.${name}`)}}
-      v-container(fluid).level.align-stretch
+      v-container
+        v-row
+          span {{$t(`langs.${name}`)}}
+      v-container
         v-row
           span.mr-1 {{$t("Coding experience")}}
           span {{codingExp}}
-        v-row
+        v-row.align-center
           span.mr-1 {{$t("level")}}
           v-icon(v-for="(l, id) in level" :key="id" :style="l.styles") {{l.icon}}
 </template>
 
 <style lang="stylus" scoped>
+  .v-icon
+    font-size 20px
 </style>
 
 <script>
