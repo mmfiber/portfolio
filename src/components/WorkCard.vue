@@ -1,7 +1,7 @@
 <template lang="pug">
   v-card(elevation=8).mb-10
     v-img(:alt="work.name" :src="require(`../assets/${work.eyecatch}`)") 
-    v-card-title.display-1.px-5 {{$t(`works.${work.name}.title`)}}
+    v-card-title.headline.px-5 {{$t(`works.${work.name}.title`)}}
     v-card-text.text.px-5 {{$t(`works.${work.name}.content`)}}
     v-card-actions.btn.px-5
       LinkBtn(:url="work.to" btnText="Go to page" :text="true" color="teal")
@@ -16,7 +16,6 @@
     position relative
 
     .text
-      font-size 20px
       margin-bottom 68px
         
     .btn 
