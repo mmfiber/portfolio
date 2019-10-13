@@ -4,7 +4,7 @@
     v-card-text
       v-container
         v-row
-          span {{$t(`langs.${name}`)}}
+          span.text {{$t(`langs.${name}`)}}
       v-container
         v-row
           span.mr-1 {{$t("Coding experience")}}
@@ -17,6 +17,9 @@
 <style lang="stylus" scoped>
   .v-icon
     font-size 20px
+
+  .text
+    text-align: justify
 </style>
 
 <script>
