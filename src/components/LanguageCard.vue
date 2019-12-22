@@ -69,14 +69,22 @@ export default {
       return this.msToDate(duration)
     },
     msToDate(ms){
-      let days = Math.floor(ms / (60*60*24*1000))
-      let months = Math.floor(days / 30)
-      let years = Math.floor(months / 12)
+      const years = Math.floor(this.msToYears(ms))
+      const months = Math.floor(this.msToMonth(ms - this.yearsToMs(years)))
       const duration = {
         "year": years,
-        "month": months - years*12,
+        "month": months,
       }
       return duration
+    },
+    msToYears(ms){
+      return ms/365/24/60/60/1000
+    },
+    msToMonth(ms){
+      return ms/30/24/60/60/1000
+    },
+    yearsToMs(ms){
+      return ms*365*24*60*60*1000
     }
   }
 }

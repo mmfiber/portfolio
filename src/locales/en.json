@@ -53,6 +53,10 @@
       "title": "Soka Study Abroad",
       "content": "The website for students who wants to go studying abroad in my university. I really regreted that I couldn't make the most of the opportunity of studying abroad. Then, I thought I didn't want to let the students who would go studying abroad feel the same regret as me, and I started a projct running website about studying abroad."
     },
+    "ToDo": {
+      "title": "ToDo app",
+      "content": "ToDo app created with Laravel and Vue.js"
+    },
     "Portfolio": {
       "title": "Portfolio",
       "content": "The portfolio with Vue.js. This porfolio is SPA and is written in Japanese and English to get more people know about me."
