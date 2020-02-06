@@ -1,6 +1,12 @@
 {
   "works":[
     {
+      "name": "SlackBotApp",
+      "eyecatch":"anonymous_post.png",
+      "create-date": "2020/2",
+      "to": "https://github.com/6f-fiber-group/slackbot"
+    },
+    {
       "name": "SSA",
       "eyecatch":"SSA.png",
       "create-date": "2019/9",

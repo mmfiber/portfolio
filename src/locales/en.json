@@ -49,6 +49,10 @@
     "English": "I'm slso studying this language from the first grade in elementary school. I don't know why, but I can't speak English well. And, I don't know why, but I can't keep studying."
   },
   "works":{
+    "SlackBotApp": {
+      "title": "Slack Bot App",
+      "content": "App for anonymous post in slack. This app makes posting what pepole think or feel more easier. I'm tring to improve our lab work environment by orgnaizing team which react to anonymous posts."
+    },
     "SSA": {
       "title": "Soka Study Abroad",
       "content": "The website for students who wants to go studying abroad in my university. I really regreted that I couldn't make the most of the opportunity of studying abroad. Then, I thought I didn't want to let the students who would go studying abroad feel the same regret as me, and I started a projct running website about studying abroad."
